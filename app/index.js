@@ -22,7 +22,7 @@ export async function startServer() {
 
       console.log('hashtag', hashtag.statusText);
       console.log('devlink', devlinksRes);
-      console.log('check2', check2.statusText);
+      // console.log('check2', check2.statusText);
     }, 1000 * 60 * 5);
   } catch (error) {
     console.log(error);
