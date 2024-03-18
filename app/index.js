@@ -17,8 +17,12 @@ export async function startServer() {
       );
       const devlinksRes = await devlinks.json();
 
+        const check2 = await fetch('https://check2-ay6p.onrender.com/health');
+      // const hashtagRes = await hashtag.json();
+
       console.log('hashtag', hashtag.statusText);
       console.log('devlink', devlinksRes);
+      console.log('check2', check2.statusText);
     }, 1000 * 60 * 5);
   } catch (error) {
     console.log(error);
